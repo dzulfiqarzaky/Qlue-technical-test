@@ -87,6 +87,39 @@
         "php": "expert"
       },
       "id": 8
+    },
+    {
+      "first_name": "asdada",
+      "last_name": "23123123",
+      "skills": {
+        "javascript": "expert",
+        "python": "expert",
+        "golang": "expert",
+        "php": "expert"
+      },
+      "id": 9
+    },
+    {
+      "first_name": "asdasd",
+      "last_name": "asdasds",
+      "skills": {
+        "javascript": "expert",
+        "python": "expert",
+        "golang": "expert",
+        "php": "basic"
+      },
+      "id": 10
+    },
+    {
+      "first_name": "kuda",
+      "last_name": "lumping",
+      "skills": {
+        "javascript": "expert",
+        "python": "expert",
+        "golang": "basic",
+        "php": "basic"
+      },
+      "id": 11
     }
   ]
 }
