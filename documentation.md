@@ -76,6 +76,14 @@ _Response (200 - OK)_
 ]
 ```
 
+_Response (404 - profileNotFound)_
+
+```json
+{
+    "msg": "Error not found!"
+}
+```
+
 &nbsp;
 
 ## 3. POST /create
@@ -114,3 +122,21 @@ _Response (201 - created)_
 ```
 
 &nbsp;
+
+## Global Error
+
+_Response (500 - Internal Server Error)_
+
+```json
+{
+    "msg": "Internal server error"
+}
+```
+
+_Response (502 - ERR_CONNECTION_REFUSED)_
+
+```json
+{
+    "msg": "Error! connection refused"
+}
+```
