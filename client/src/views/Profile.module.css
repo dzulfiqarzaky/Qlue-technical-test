@@ -1,0 +1,133 @@
+.detailCard {
+    width: 45%;
+    max-width: 45rem;
+    height: 95vh;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.5rem;
+    margin-top: 2.5vh;
+    background-color: rgb(233, 168, 86);
+    /* background-color: rgb(255,211,146); */
+    /* justify-content: center; */
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.image{
+    margin-top: 2rem;
+    width: 50%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+
+.name{
+    font-size: 3rem;
+    letter-spacing: .55rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+
+}
+
+.skills {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.skills p {
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+.skills li {
+    font-weight: 500;
+}
+.description {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+    
+
+
+
+@media screen and (max-width: 1968px) {
+    .detailCard {
+        width: 40%;
+        max-width: 30rem;
+        height: 95vh;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1.5rem;
+    }
+    .image{
+        margin-top: 2rem;
+        width: 50%;
+        max-width: 10rem;
+        border-radius: 50%;
+        object-fit: contain;
+    }
+    .name {
+        font-size: 2rem;
+        letter-spacing: .40rem;
+        font-weight: 700;
+    }
+    .skills {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .skills p {
+        margin-inline: auto;
+        margin-bottom: .5rem;
+    }
+    .skills li {
+        font-weight: 500;
+    }
+    .description {
+        font-size: .70rem;
+        text-align: justify;
+    }  
+}
+
+@media screen and (max-width: 1368px) {
+    .detailCard {
+        width: 45%;
+        max-width: 40rem;
+        height: 95vh;
+    }
+
+    .image{
+        margin-top: 2rem;
+        width: 40%;
+        max-width: 10rem;
+        border-radius: 50%;
+        object-fit: contain;
+    }
+
+    .name {
+        font-size: 1.5rem;
+        letter-spacing: .40rem;
+        font-weight: 700;
+    }
+    .skills {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .skills p {
+        margin-inline: auto;
+        margin-bottom: 1rem;
+    }
+    .skills li {
+        font-weight: 500;
+    }
+    .description {
+        font-size: .7rem;
+        text-align: justify;
+    }
+}
+    
