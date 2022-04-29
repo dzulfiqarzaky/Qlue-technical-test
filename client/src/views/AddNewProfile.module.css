@@ -1,0 +1,61 @@
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .profileCard {
+    width: 30%;
+    height: calc(100% - 70px);
+    padding: 2rem;
+    background-color: rgb(223, 168, 86);
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profileTitle {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    font-weight: 800;
+  }
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 4rem 0;
+  }
+  
+  .label {
+    letter-spacing: .2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  
+  .nameInput {
+    background-color: #ffe3b9;
+    padding: 1rem;
+    border: none;
+    border-radius: .4rem;
+    font-weight: 600;
+  }
+  
+  .error {
+    font-size: 1rem;
+    color: red;
+    margin-top: .3rem;
+  }
+  
+  .button {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 10px #ffdba5;
+    border-radius: .5rem;
+    width: 40%;
+    padding: 1rem 0;
+    border-radius: .5rem;
+    font-size: 1rem;
+  }

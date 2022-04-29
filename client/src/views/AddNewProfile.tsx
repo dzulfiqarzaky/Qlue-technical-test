@@ -4,7 +4,7 @@ import { dispatchStore} from "../state"
 
 import { useNavigate } from "react-router-dom";
 import { addProfile } from "../state/action-creators";
-
+import style from './AddNewProfile.module.css'
 function AddNewProfile() {
   const [user, setUser] = useState({
     full_name: "",
@@ -42,21 +42,21 @@ function AddNewProfile() {
     } else {
       dispatchStore(addProfile(user)) 
       setTimeout(() => {
-        navigate("/profiles")
+        navigate("/")
       }, 0)
     }
   };
 
 
   return (
-    <div className="profileContainer">
-      <form onSubmit={handleSubmit} className="profileCard">
-        <span className="profileTitle">Create Person</span>
-        <div className="inputContainer">
-          <label htmlFor="name" className="label">Name</label>
-          <input type="text" name="full_name" className="nameInput" onChange={handleChange} id="full_name" />
-          { !error ? undefined : ( <span className="error">Please fill in name above</span> )}
-          <span className="label">Expert Skills</span>
+    <div className={style.profileContainer}>
+      <form onSubmit={handleSubmit} className={style.profileCard}>
+        <span className={style.profileTitle}>Create Person</span>
+        <div className={style.inputContainer}>
+          <label htmlFor="name" className={style.label}>Name</label>
+          <input type="text" name="full_name" className={style.nameInput} onChange={handleChange} id="full_name" />
+          { !error ? undefined : ( <span className={style.error}>Please fill in name above</span> )}
+          <span className={style.label}>Expert Skills</span>
           <div>
             <input type="checkbox" name="skills" value="javascript" id="javascript" onChange={checklist} />
             <label htmlFor="javascript">javascript</label>
@@ -74,7 +74,7 @@ function AddNewProfile() {
             <label htmlFor="php">php</label>
           </div>
         </div>
-        <button type="submit" className="button">Submit</button>
+        <button type="submit" className={style.button}>Submit</button>
       </form>
     </div>
   )
