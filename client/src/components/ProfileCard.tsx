@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { ProfileProps } from '../view/Profile'
+import { ProfileProps } from '../views/Profiles'
 import style from './ProfileCard.module.css'
 const ProfileCard= ({profile}: {profile:ProfileProps}) => {
     const navigate = useNavigate()
