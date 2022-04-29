@@ -1,7 +1,7 @@
 
 import './App.css';
 import { Routes, Route, Outlet } from 'react-router-dom';
-import Profiles from './view/Profiles';
+import Profiles from './views/Profiles';
 import AddNewProfile from './view/AddNewProfile';
 import Profile from './view/Profile';
 function App() {
