@@ -1,0 +1,17 @@
+.profileCard {
+    width: min(49%, 60vw);
+    height: 30vh;
+    background-color: cadetblue;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.fullName {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
