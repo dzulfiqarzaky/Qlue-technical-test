@@ -9,3 +9,23 @@
     margin-inline: auto;
     gap: 1rem;
 }
+
+.createProfile {
+    position: fixed;
+    bottom: 0;
+    right: 47.9%;
+    bottom: 1.25rem;
+    padding: .15rem .9rem .4rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.createProfile:hover {
+    background-color: rgb(233, 168, 86);
+    color: white;
+    cursor: pointer;
+}

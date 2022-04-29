@@ -4,6 +4,7 @@ import { dispatchStore, State } from '../state'
 import { fetchProfiles } from '../state/action-creators'
 import ProfileCard from '../components/ProfileCard'
 import style from './Profiles.module.css'
+import { NavLink } from 'react-router-dom'
 
 export interface ProfileProps {
     id: string,
@@ -30,13 +31,21 @@ function Profiles() {
 
     
   return (
+      <>
+      
         <div className={style.flex}>
         { profiles &&
         profiles.map((profile:ProfileProps) => (    
                 <ProfileCard key={profile.id} profile={profile}/>
         ))
     }
-    </div>    
+    </div>  
+    <NavLink to="/create" 
+    className={style.createProfile}
+    >
+        +
+    </NavLink>
+      </>
   )
 }
 
